@@ -1,0 +1,4 @@
+2013-03-23  Christophe Vidal  <kriss@krizalys.com>
+	* Added support for Joomla! updater
+	* Added support for fr_FR locale
+	* Minor code refactoring

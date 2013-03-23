@@ -28,7 +28,7 @@ if (!$langLink)
 			echo '<a href="'. $item->link . '" itemprop="url" class="pathway"><span itemprop="title">' . $item->name . '</span></a>';
 		}
 
-		if ($i < $count -2)
+		if ($i < $count - 2)
 		{
 			echo ' ' . $separator . ' ';
 		}

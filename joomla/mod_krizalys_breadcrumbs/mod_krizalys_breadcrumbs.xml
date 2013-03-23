@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="2.5" method="upgrade" client="site">
 	<name>mod_krizalys_breadcrumbs</name>
+	<version>1.0.1</version>
 	<author>Krizalys</author>
-	<creationDate>September 2012</creationDate>
-	<copyright>Copyright (C) 2008 - 2012 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<creationDate>January 2013</creationDate>
+	<copyright>Copyright (C) 2008 - 2013 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
+	<license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
 	<authorEmail>kriss@krizalys.com</authorEmail>
 	<authorUrl>www.krizalys.com</authorUrl>
-	<version>2.5.0</version>
 	<description>MOD_KRIZALYS_BREADCRUMBS_XML_DESCRIPTION</description>
 
 	<files>
@@ -18,6 +18,10 @@
 		<filename module="mod_krizalys_breadcrumbs">mod_krizalys_breadcrumbs.php</filename>
 		<filename>mod_krizalys_breadcrumbs.xml</filename>
 	</files>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Krizalys Breadcrumbs updates"><![CDATA[http://update.krizalys.com/extend/joomla/breadcrumbs.xml]]></server>
+	</updateservers>
 
 	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_KRIZALYS_BREADCRUMBS" />
 

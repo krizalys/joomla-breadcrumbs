@@ -15,6 +15,7 @@ defined( '_JEXEC' ) or die('Restricted access');
 	<?php endif; ?>
 	<?php
 	$i = 0;
+
 	if ($format == 'RDFa')
 	{
 		require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_rdfa'));

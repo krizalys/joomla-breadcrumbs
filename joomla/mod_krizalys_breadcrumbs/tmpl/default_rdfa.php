@@ -38,7 +38,7 @@ if (!$langLink)
 			echo '<a href="' . $item->link . '" rel="v:url" property="v:title">' . $item->name . '</a>';
 		}
 
-		if ($i < $count -2)
+		if ($i < $count - 2)
 		{
 			echo ' ' . $separator . ' ';
 		}
