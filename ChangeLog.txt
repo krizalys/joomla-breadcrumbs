@@ -1,3 +1,6 @@
+2013-05-26  Christophe Vidal  <kriss@krizalys.com>
+	* Added support for it_IT locale (translation by Squall77it <squall77it@gmail.com>)
+
 2013-03-23  Christophe Vidal  <kriss@krizalys.com>
 	* Added support for Joomla! updater
 	* Added support for fr_FR locale
