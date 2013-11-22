@@ -51,7 +51,15 @@ if (!$langLink)
 			echo ' ' . $separator . ' ';
 		}
 
-		echo '<span property="v:title">' . $item->name . '</span>';
+		if ($linkLast)
+		{
+			echo '<a href="' . $item->link . '" rel="v:url" property="v:title">' . $item->name . '</a>';
+		}
+
+		else
+		{
+			echo '<span property="v:title">' . $item->name . '</span>';
+		}
 	}
 }
 

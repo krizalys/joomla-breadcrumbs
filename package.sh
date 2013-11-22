@@ -1,11 +1,11 @@
 #!/bin/sh
 
-VERSION="1.0.2"
+VERSION="1.0.3"
 
 cd joomla/mod_krizalys_breadcrumbs; zip -r ../../mod_krizalys_breadcrumbs-${VERSION}-all-languages.zip .; cd ../..
 cp mod_krizalys_breadcrumbs-${VERSION}-all-languages.zip mod_krizalys_breadcrumbs-${VERSION}.zip
 
-for locale in fr-FR it-IT; do
+for locale in de-DE fr-FR it-IT; do
 	zip -d mod_krizalys_breadcrumbs-${VERSION}.zip \
 		language/${locale}/* \
 		language/${locale}/

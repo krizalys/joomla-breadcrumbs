@@ -41,7 +41,15 @@ if (!$langLink)
 			echo ' ' . $separator . ' ';
 		}
 
-		echo '<span itemprop="title">' . $item->name . '</span>';
+		if ($linkLast)
+		{
+			echo '<a href="' . $item->link . '" itemprop="url" class="pathway"><span itemprop="title">' . $item->name . '</span></a>';
+		}
+
+		else
+		{
+			echo '<span itemprop="title">' . $item->name . '</span>';
+		}
 	}
 }
 
