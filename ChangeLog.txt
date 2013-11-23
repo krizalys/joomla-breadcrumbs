@@ -1,5 +1,13 @@
+2013-10-26  Christophe Vidal  <kriss@krizalys.com>
+	* Added a "link last" option
+
+2013-10-25  Christophe Vidal  <kriss@krizalys.com>
+	* Added support for de_DE locale (translation by Karsten Müller
+<http://tux.hm/>)
+
 2013-05-26  Christophe Vidal  <kriss@krizalys.com>
-	* Added support for it_IT locale (translation by Squall77it <squall77it@gmail.com>)
+	* Added support for it_IT locale (translation by Squall77it
+<squall77it@gmail.com>)
 
 2013-03-23  Christophe Vidal  <kriss@krizalys.com>
 	* Added support for Joomla! updater
