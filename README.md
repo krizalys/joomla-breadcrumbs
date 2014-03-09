@@ -7,7 +7,7 @@ Using this module allows conforming search engines to offer comprehensive breadc
 
 ![Google search for Stephen King](http://demo.krizalys.com/joomla/images/rich-breadcrumbs.png)
 
-The module supports both Joomla! 2.5 and Joomla! 3, and Microdata and RDFa formats. Webmasters can also choose to generate only XHTML markup, allowing their website to remain XHTML compliant. To make yourself a better idea of the module, please check our live demo and for more information, please consult the [documentation](http://www.krizalys.com/book/krizalys-breadcrumbs-documentation).
+The module supports both Joomla! 2.5 and Joomla! 3, and Microdata and RDFa formats. Webmasters can also choose to generate only XHTML markup, allowing their website to remain XHTML compliant. To make yourself a better idea of the module, please check our [live demo](http://demo.krizalys.com/joomla/demos/krizalys-breadcrumbs#demo_breadcrumbs) and for more information, please consult the [documentation](http://www.krizalys.com/book/krizalys-breadcrumbs-documentation).
 
 The extension is licensed under the GNU General Public License version 3.
 
