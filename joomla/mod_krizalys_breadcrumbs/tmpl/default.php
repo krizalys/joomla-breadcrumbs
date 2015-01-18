@@ -2,7 +2,7 @@
 /**
  * @package    Krizalys.Breadcrumbs
  * @subpackage mod_krizalys_breadcrumbs
- * @copyright  Copyright (C) 2008 - 2013 Krizalys (http://www.krizalys.com/). All rights reserved.
+ * @copyright  Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.
  * @license    GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html).
  */
 

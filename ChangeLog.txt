@@ -1,3 +1,8 @@
+2015-01-18  Christophe Vidal  <kriss@krizalys.com>
+	* Added support for nl_NL locale (translation by Gijs van der Velden
+<http://www.elitegameservers.net/>)
+	* Added a script to generate distributions
+
 2013-10-26  Christophe Vidal  <kriss@krizalys.com>
 	* Added a "link last" option
 

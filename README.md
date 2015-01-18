@@ -16,6 +16,7 @@ Supported languages
 
 As of version 1.0.3, the multilingual flavor of Krizalys Breadcrumbs supports the following locales:
 
+* Dutch (nl_NL locale)
 * English (en_GB locale)
 * French (fr_FR locale)
 * German (de_DE locale)
@@ -33,6 +34,7 @@ Credits
 
 Krizalys would like to thank the people that contributed to Krizalys Breadcrumbs' translations:
 
+* Gijs van der Velden <http://www.elitegameservers.net/> (Dutch translation)
 * Karsten Müller <http://tux.hm/> (German translation)
 * Christophe Vidal <http://www.krizalys.com/> (French translation)
 * Squall77it (Italian translation)
