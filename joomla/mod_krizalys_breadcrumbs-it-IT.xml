@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="file" version="2.5" method="upgrade">
 	<name>mod_krizalys_breadcrumbs_it-IT</name>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<author>Squall77it</author>
 	<creationDate>10/05/2013</creationDate>
 	<copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>

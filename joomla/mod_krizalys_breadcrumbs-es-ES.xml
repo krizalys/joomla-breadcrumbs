@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="file" version="2.5" method="upgrade">
 	<name>mod_krizalys_breadcrumbs_es-ES</name>
-	<version>1.0.3</version>
-	<author>Krizalys</author>
+	<version>1.0.4</version>
+	<author>Andrés Benavente</author>
 	<creationDate>March 2013</creationDate>
 	<copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
 	<license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>

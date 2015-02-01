@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="2.5" method="upgrade" client="site">
 	<name>mod_krizalys_breadcrumbs</name>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<author>Krizalys</author>
 	<creationDate>January 2013</creationDate>
 	<copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
