@@ -21,6 +21,7 @@ As of version 1.0.3, the multilingual flavor of Krizalys Breadcrumbs supports th
 * French (fr_FR locale)
 * German (de_DE locale)
 * Italian (it_IT locale)
+* Spanish (es_ES locale)
 
 Demonstration
 -------------
@@ -38,5 +39,6 @@ Krizalys would like to thank the people that contributed to Krizalys Breadcrumbs
 * Karsten Müller <http://tux.hm/> (German translation)
 * Christophe Vidal <http://www.krizalys.com/> (French translation)
 * Squall77it (Italian translation)
+* Andrés Benavente (Spanish translation)
 
 If you are interested in translating Krizalys Breadcrumbs into your language, please [contact us](http://www.krizalys.com/contact).

@@ -1,3 +1,7 @@
+2015-02-01  Christophe Vidal  <kriss@krizalys.com>
+	* Added support for es_ES locale (translation by Andrés Benavente
+<http://www.revistautopia.com/>)
+
 2015-01-18  Christophe Vidal  <kriss@krizalys.com>
 	* Added support for nl_NL locale (translation by Gijs van der Velden
 <http://www.elitegameservers.net/>)
