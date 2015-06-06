@@ -14,6 +14,14 @@ Change log
 - [#4: HTML markup does not validate in Google' Structured Data Testing
 Tool][#4]
 
+### Changed
+- PHP-FIG/PSR compliance.
+
+2015-05-05
+----------
+### Added
+- .editorconfig file.
+
 2015-02-01
 ----------
 ### Added
