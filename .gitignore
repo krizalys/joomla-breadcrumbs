@@ -1,2 +1,5 @@
+# Archives
+*.zip
+
 # Mac OS X artifacts
 .DS_Store
