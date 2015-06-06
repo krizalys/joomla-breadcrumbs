@@ -2,13 +2,13 @@ Krizalys Breadcrumbs
 ====================
 
 [Krizalys Breadcrumbs][krizalys-breadcrumbs] is a module for [Joomla!][joomla]
-that provides breadcrumbs functionality similar the built-in Breadcrumbs module,
-with more customization options. Additionally, it makes use of [rich
+which provides breadcrumbs functionality similar to the built-in Breadcrumbs
+module, with more customization options. Additionally, it makes use of [rich
 snippets][rich-snippets]. This helps search engines such as [Google][google] to
 better understand the structure of your website and leads to better SEO.
 
 Using this module allows conforming search engines to offer comprehensive
-breadcrumbs of your pages directly from their search results page. For example,
+breadcrumbs of your pages, directly from their search results page. For example,
 a [Google search for Stephen King][google-search-example] returns a result from
 [Amazon][amazon], with the full breadcrumbs from the root of their website:
 
