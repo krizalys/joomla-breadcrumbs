@@ -1,6 +1,19 @@
 Change log
 ==========
 
+[Unreleased][unreleased]
+------------------------
+2015-06-07
+---------
+### Fixed
+- [#3: PHP error message when using microdata][#3]
+
+2015-06-06
+----------
+### Fixed
+- [#4: HTML markup does not validate in Google' Structured Data Testing
+Tool][#4]
+
 2015-02-01
 ----------
 ### Added
@@ -39,3 +52,7 @@ Change log
 
 ### Changed
 - Minor code refactoring.
+
+[unreleased]: https://github.com/krizalys/breadcrumbs/compare/1.0.4...HEAD
+[#3]:         https://bitbucket.org/krizalys/breadcrumbs/issue/3/php-error-message-when-using-microdata
+[#4]:         https://bitbucket.org/krizalys/breadcrumbs/issue/4/html-markup-does-not-validate-in-google
