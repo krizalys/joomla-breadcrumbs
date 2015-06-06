@@ -16,10 +16,12 @@ defined( '_JEXEC' ) or die('Restricted access');
     <?php
     $i = 0;
 
-    if ($format == 'RDFa') {
-        require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_rdfa'));
-    } else {
-        require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_microdata'));
+    if (0 < $count) {
+        if ($format == 'RDFa') {
+            require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_rdfa'));
+        } else {
+            require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_microdata'));
+        }
     }
     ?>
 </div>
