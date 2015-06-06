@@ -14,75 +14,75 @@ $langLink = $i == 1 && !empty($item->link) && !empty($list[$i - 1]->link) && $it
 
 if ($i == 0)
 {
-	echo '<span xmlns:v="http://rdf.data-vocabulary.org/#">';
+    echo '<span xmlns:v="http://rdf.data-vocabulary.org/#">';
 }
 
 if (!$langLink)
 {
-	if ($i > 0)
-	{
-		echo '<span rel="v:child">';
-	}
+    if ($i > 0)
+    {
+        echo '<span rel="v:child">';
+    }
 
-	echo '<span typeof="v:Breadcrumb">';
+    echo '<span typeof="v:Breadcrumb">';
 
-	if ($i < $last)
-	{
-		if (empty($item->link))
-		{
-			echo '<span property="v:title">' . $item->name . '</span>';
-		}
+    if ($i < $last)
+    {
+        if (empty($item->link))
+        {
+            echo '<span property="v:title">' . $item->name . '</span>';
+        }
 
-		else
-		{
-			echo '<a href="' . $item->link . '" rel="v:url" property="v:title">' . $item->name . '</a>';
-		}
+        else
+        {
+            echo '<a href="' . $item->link . '" rel="v:url" property="v:title">' . $item->name . '</a>';
+        }
 
-		if ($i < $count - 2)
-		{
-			echo ' ' . $separator . ' ';
-		}
-	}
+        if ($i < $count - 2)
+        {
+            echo ' ' . $separator . ' ';
+        }
+    }
 
-	elseif ($showLast)
-	{
-		if ($i > 0)
-		{
-			echo ' ' . $separator . ' ';
-		}
+    elseif ($showLast)
+    {
+        if ($i > 0)
+        {
+            echo ' ' . $separator . ' ';
+        }
 
-		if ($linkLast)
-		{
-			echo '<a href="' . $item->link . '" rel="v:url" property="v:title">' . $item->name . '</a>';
-		}
+        if ($linkLast)
+        {
+            echo '<a href="' . $item->link . '" rel="v:url" property="v:title">' . $item->name . '</a>';
+        }
 
-		else
-		{
-			echo '<span property="v:title">' . $item->name . '</span>';
-		}
-	}
+        else
+        {
+            echo '<span property="v:title">' . $item->name . '</span>';
+        }
+    }
 }
 
 ++$i;
 
 if ($i < $count)
 {
-	require __FILE__;
+    require __FILE__;
 }
 
 --$i;
 
 if (!$langLink)
 {
-	echo '</span>';
+    echo '</span>';
 
-	if ($i > 0)
-	{
-		echo '</span>';
-	}
+    if ($i > 0)
+    {
+        echo '</span>';
+    }
 }
 
 if ($i == 0)
 {
-	echo '</span>';
+    echo '</span>';
 }

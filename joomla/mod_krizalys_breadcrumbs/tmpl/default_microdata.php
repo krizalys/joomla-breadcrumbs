@@ -14,53 +14,53 @@ $langLink = $i == 1 && !empty($item->link) && !empty($list[$i - 1]->link) && $it
 
 if (!$langLink)
 {
-	echo '<span' . ($i > 0 ? ' itemprop="child"' : '') . ' ' . $itemscope . ' itemtype="http://data-vocabulary.org/Breadcrumb">';
+    echo '<span' . ($i > 0 ? ' itemprop="child"' : '') . ' ' . $itemscope . ' itemtype="http://data-vocabulary.org/Breadcrumb">';
 
-	if ($i < $last)
-	{
-		if (empty($item->link))
-		{
-			echo '<span itemprop="title">' . $item->name . '</span>';
-		}
+    if ($i < $last)
+    {
+        if (empty($item->link))
+        {
+            echo '<span itemprop="title">' . $item->name . '</span>';
+        }
 
-		else
-		{
-			echo '<a href="'. $item->link . '" itemprop="url" class="pathway"><span itemprop="title">' . $item->name . '</span></a>';
-		}
+        else
+        {
+            echo '<a href="'. $item->link . '" itemprop="url" class="pathway"><span itemprop="title">' . $item->name . '</span></a>';
+        }
 
-		if ($i < $count - 2)
-		{
-			echo ' ' . $separator . ' ';
-		}
-	}
+        if ($i < $count - 2)
+        {
+            echo ' ' . $separator . ' ';
+        }
+    }
 
-	elseif ($showLast)
-	{
-		if ($i > 0)
-		{
-			echo ' ' . $separator . ' ';
-		}
+    elseif ($showLast)
+    {
+        if ($i > 0)
+        {
+            echo ' ' . $separator . ' ';
+        }
 
-		if ($linkLast)
-		{
-			echo '<a href="' . $item->link . '" itemprop="url" class="pathway"><span itemprop="title">' . $item->name . '</span></a>';
-		}
+        if ($linkLast)
+        {
+            echo '<a href="' . $item->link . '" itemprop="url" class="pathway"><span itemprop="title">' . $item->name . '</span></a>';
+        }
 
-		else
-		{
-			echo '<span itemprop="title">' . $item->name . '</span>';
-		}
-	}
+        else
+        {
+            echo '<span itemprop="title">' . $item->name . '</span>';
+        }
+    }
 }
 
 ++$i;
 
 if ($i < $count)
 {
-	require __FILE__;
+    require __FILE__;
 }
 
 if (!$langLink)
 {
-	echo '</span>';
+    echo '</span>';
 }
