@@ -18,10 +18,22 @@ if ($i == 0) {
 
 if (!$langLink) {
     if ($i > 0) {
-        echo '<span rel="v:child">';
+        echo '<span';
+
+        if ($i < $last && !empty($item->link) || $showLast && $linkLast) {
+            echo ' rel="v:child"';
+        }
+
+        echo '>';
     }
 
-    echo '<span typeof="v:Breadcrumb">';
+    echo '<span';
+
+    if ($i < $last && !empty($item->link) || $showLast && $linkLast) {
+        echo ' typeof="v:Breadcrumb"';
+    }
+
+    echo '>';
 
     if ($i < $last) {
         if (empty($item->link)) {

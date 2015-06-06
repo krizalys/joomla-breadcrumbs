@@ -13,7 +13,17 @@ $item = $list[$i];
 $langLink = $i == 1 && !empty($item->link) && !empty($list[$i - 1]->link) && $item->link == $list[$i - 1]->link;
 
 if (!$langLink) {
-    echo '<span' . ($i > 0 ? ' itemprop="child"' : '') . ' ' . $itemscope . ' itemtype="http://data-vocabulary.org/Breadcrumb">';
+    echo '<span';
+
+    if ($i < $last && !empty($item->link) || $showLast && $linkLast) {
+        echo ' ' . $itemscope . ' itemtype="http://data-vocabulary.org/Breadcrumb"';
+    }
+
+    if ($i > 0) {
+        echo ' itemprop="child"';
+    }
+
+    echo '>';
 
     if ($i < $last) {
         if (empty($item->link)) {
