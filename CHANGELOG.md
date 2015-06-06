@@ -3,57 +3,41 @@ Change log
 
 [Unreleased][unreleased]
 ------------------------
-2015-06-07
----------
-### Fixed
-- [#3: PHP error message when using microdata][#3]
-
-2015-06-06
-----------
-### Fixed
-- [#4: HTML markup does not validate in Google' Structured Data Testing
-Tool][#4]
+### Added
+- .editorconfig file.
 
 ### Changed
 - PHP-FIG/PSR compliance.
 
-2015-05-05
-----------
-### Added
-- .editorconfig file.
+### Fixed
+- [#3: PHP error message when using microdata][#3].
+- [#4: HTML markup does not validate in Google' Structured Data Testing
+Tool][#4].
 
-2015-02-01
-----------
+[1.0.4] - 2015-02-01
+--------------------
 ### Added
 - Support for es_ES locale (translation by Andrés Benavente
 <http://www.revistautopia.com/>).
-
-2015-01-18
-----------
-### Added
 - Support for nl_NL locale (translation by Gijs van der Velden
 <http://www.elitegameservers.net/>).
 - Script to generate distributions (Christophe Vidal
 <http://www.krizalys.com/>).
 
-2013-10-26
-----------
+[1.0.3] - 2013-11-22
+--------------------
 ### Added
 - "Link last" option (Christophe Vidal <http://www.krizalys.com/>).
-
-2013-10-25
-----------
-### Added
 - Support for de_DE locale (translation by Karsten Müller <http://tux.hm/>).
 
-2013-05-26
-----------
+[1.0.2] - 2013-05-26
+--------------------
 ### Added
 - Support for it_IT locale (translation by Squall77it
 <squall77it@gmail.com>).
 
-2013-03-23
-----------
+[1.0.1] - 2013-03-24
+--------------------
 ### Added
 - Support for Joomla! updater (Christophe Vidal <http://www.krizalys.com/>).
 - Support for fr_FR locale (translation by Christophe Vidal
@@ -63,5 +47,9 @@ Tool][#4]
 - Minor code refactoring.
 
 [unreleased]: https://github.com/krizalys/breadcrumbs/compare/1.0.4...HEAD
+[1.0.4]:      https://github.com/krizalys/breadcrumbs/compare/1.0.3...1.0.4
+[1.0.3]:      https://github.com/krizalys/breadcrumbs/compare/1.0.2...1.0.3
+[1.0.2]:      https://github.com/krizalys/breadcrumbs/compare/1.0.1...1.0.2
+[1.0.1]:      https://github.com/krizalys/breadcrumbs/compare/1.0.0...1.0.1
 [#3]:         https://bitbucket.org/krizalys/breadcrumbs/issue/3/php-error-message-when-using-microdata
 [#4]:         https://bitbucket.org/krizalys/breadcrumbs/issue/4/html-markup-does-not-validate-in-google
