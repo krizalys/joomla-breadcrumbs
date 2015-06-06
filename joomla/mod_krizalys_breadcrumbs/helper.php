@@ -36,7 +36,7 @@ class modKrizalysBreadcrumbsHelper
 
         if ($params->get('show_home', 1)) {
             $item = new stdClass();
-            $item->name = htmlspecialchars($params->get('homeText', JText::_('MOD_KRIZALYS_BREADCRUMBS_HOME')));
+            $item->name = htmlspecialchars($params->get('home_text', JText::_('MOD_KRIZALYS_BREADCRUMBS_HOME')));
             $item->link = JRoute::_('index.php?Itemid=' . $home->id);
             array_unshift($crumbs, $item);
         }
