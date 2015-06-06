@@ -25,12 +25,13 @@ Tool][#4]
 ### Added
 - Support for nl_NL locale (translation by Gijs van der Velden
 <http://www.elitegameservers.net/>).
-- Script to generate distributions (Christophe Vidal <kriss@krizalys.com>).
+- Script to generate distributions (Christophe Vidal
+<http://www.krizalys.com/>).
 
 2013-10-26
 ----------
 ### Added
-- "Link last" option (Christophe Vidal <kriss@krizalys.com>).
+- "Link last" option (Christophe Vidal <http://www.krizalys.com/>).
 
 2013-10-25
 ----------
@@ -46,9 +47,9 @@ Tool][#4]
 2013-03-23
 ----------
 ### Added
-- Support for Joomla! updater (Christophe Vidal <kriss@krizalys.com>).
+- Support for Joomla! updater (Christophe Vidal <http://www.krizalys.com/>).
 - Support for fr_FR locale (translation by Christophe Vidal
-<kriss@krizalys.com>).
+<http://www.krizalys.com/>).
 
 ### Changed
 - Minor code refactoring.
