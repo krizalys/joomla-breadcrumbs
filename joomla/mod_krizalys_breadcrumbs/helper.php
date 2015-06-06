@@ -11,53 +11,42 @@ defined( '_JEXEC' ) or die('Restricted access');
 
 class modKrizalysBreadcrumbsHelper
 {
-	public static function getList(&$params)
-	{
-		$app = JFactory::getApplication();
-		$pathway = $app->getPathway();
-		$items = $pathway->getPathWay();
-		$count = count($items);
+    public static function getList(&$params)
+    {
+        $app = JFactory::getApplication();
+        $pathway = $app->getPathway();
+        $items = $pathway->getPathWay();
+        $count = count($items);
 
-		for ($i = 0; $i < $count; ++$i)
-		{
-			$items[$i]->name = stripslashes(htmlspecialchars($items[$i]->name, ENT_COMPAT, 'UTF-8'));
-			$items[$i]->link = JRoute::_($items[$i]->link);
-		}
+        for ($i = 0; $i < $count; ++$i) {
+            $items[$i]->name = stripslashes(htmlspecialchars($items[$i]->name, ENT_COMPAT, 'UTF-8'));
+            $items[$i]->link = JRoute::_($items[$i]->link);
+        }
 
-		if ($params->get('show_home', 1))
-		{
-			$item = new stdClass();
-			$item->name = htmlspecialchars($params->get('home_text', JText::_('MOD_KRIZALYS_BREADCRUMBS_HOME')));
-			$item->link = JRoute::_('index.php?Itemid=' . $app->getMenu()->getDefault()->id);
-			array_unshift($items, $item);
-		}
+        if ($params->get('show_home', 1)) {
+            $item = new stdClass();
+            $item->name = htmlspecialchars($params->get('home_text', JText::_('MOD_KRIZALYS_BREADCRUMBS_HOME')));
+            $item->link = JRoute::_('index.php?Itemid=' . $app->getMenu()->getDefault()->id);
+            array_unshift($items, $item);
+        }
 
-		return $items;
-	}
+        return $items;
+    }
 
-	public static function setSeparator($custom = null)
-	{
-		$lang = JFactory::getLanguage();
+    public static function setSeparator($custom = null)
+    {
+        $lang = JFactory::getLanguage();
 
-		if ($custom == null)
-		{
-			if ($lang->isRTL())
-			{
-				$_separator = JHtml::_('image', 'system/arrow_rtl.png', null, null, true);
-			}
+        if ($custom == null) {
+            if ($lang->isRTL()) {
+                $_separator = JHtml::_('image', 'system/arrow_rtl.png', null, null, true);
+            } else {
+                $_separator = JHtml::_('image', 'system/arrow.png', null, null, true);
+            }
+        } else {
+            $_separator = htmlspecialchars($custom);
+        }
 
-			else
-			{
-				$_separator = JHtml::_('image', 'system/arrow.png', null, null, true);
-			}
-
-		}
-
-		else
-		{
-			$_separator = htmlspecialchars($custom);
-		}
-
-		return $_separator;
-	}
+        return $_separator;
+    }
 }

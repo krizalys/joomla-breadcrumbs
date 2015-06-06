@@ -10,20 +10,16 @@
 defined( '_JEXEC' ) or die('Restricted access');
 ?>
 <div class="krizalys_breadcrumb<?php echo $moduleclassSfx; ?>"<?php if ($format == 'RDFa') echo ' xmlns:v="http://rdf.data-vocabulary.org/#"'; ?>>
-	<?php if ($showHere): ?>
-	<span class="showHere"><?php echo JText::_('MOD_KRIZALYS_BREADCRUMBS_HERE'); ?></span>
-	<?php endif; ?>
-	<?php
-	$i = 0;
+    <?php if ($showHere): ?>
+    <span class="showHere"><?php echo JText::_('MOD_KRIZALYS_BREADCRUMBS_HERE'); ?></span>
+    <?php endif; ?>
+    <?php
+    $i = 0;
 
-	if ($format == 'RDFa')
-	{
-		require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_rdfa'));
-	}
-
-	else
-	{
-		require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_microdata'));
-	}
-	?>
+    if ($format == 'RDFa') {
+        require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_rdfa'));
+    } else {
+        require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_microdata'));
+    }
+    ?>
 </div>
