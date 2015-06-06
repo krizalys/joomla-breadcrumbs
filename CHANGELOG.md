@@ -17,9 +17,9 @@ Tool][#4].
 [1.0.4] - 2015-02-01
 --------------------
 ### Added
-- Support for es_ES locale (translation by Andrés Benavente
+- Support for `es_ES` locale (translation by Andrés Benavente
 <http://www.revistautopia.com/>).
-- Support for nl_NL locale (translation by Gijs van der Velden
+- Support for `nl_NL` locale (translation by Gijs van der Velden
 <http://www.elitegameservers.net/>).
 - Script to generate distributions (Christophe Vidal
 <http://www.krizalys.com/>).
@@ -28,19 +28,19 @@ Tool][#4].
 --------------------
 ### Added
 - "Link last" option (Christophe Vidal <http://www.krizalys.com/>).
-- Support for de_DE locale (translation by Karsten Müller <http://tux.hm/>).
+- Support for `de_DE` locale (translation by Karsten Müller <http://tux.hm/>).
 
 [1.0.2] - 2013-05-26
 --------------------
 ### Added
-- Support for it_IT locale (translation by Squall77it
+- Support for `it_IT` locale (translation by Squall77it
 <squall77it@gmail.com>).
 
 [1.0.1] - 2013-03-24
 --------------------
 ### Added
 - Support for Joomla! updater (Christophe Vidal <http://www.krizalys.com/>).
-- Support for fr_FR locale (translation by Christophe Vidal
+- Support for `fr_FR` locale (translation by Christophe Vidal
 <http://www.krizalys.com/>).
 
 ### Changed
