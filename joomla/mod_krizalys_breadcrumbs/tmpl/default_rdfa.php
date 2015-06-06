@@ -12,52 +12,35 @@ defined( '_JEXEC' ) or die('Restricted access');
 $item = $list[$i];
 $langLink = $i == 1 && !empty($item->link) && !empty($list[$i - 1]->link) && $item->link == $list[$i - 1]->link;
 
-if ($i == 0)
-{
+if ($i == 0) {
     echo '<span xmlns:v="http://rdf.data-vocabulary.org/#">';
 }
 
-if (!$langLink)
-{
-    if ($i > 0)
-    {
+if (!$langLink) {
+    if ($i > 0) {
         echo '<span rel="v:child">';
     }
 
     echo '<span typeof="v:Breadcrumb">';
 
-    if ($i < $last)
-    {
-        if (empty($item->link))
-        {
+    if ($i < $last) {
+        if (empty($item->link)) {
             echo '<span property="v:title">' . $item->name . '</span>';
-        }
-
-        else
-        {
+        } else {
             echo '<a href="' . $item->link . '" rel="v:url" property="v:title">' . $item->name . '</a>';
         }
 
-        if ($i < $count - 2)
-        {
+        if ($i < $count - 2) {
             echo ' ' . $separator . ' ';
         }
-    }
-
-    elseif ($showLast)
-    {
-        if ($i > 0)
-        {
+    } elseif ($showLast) {
+        if ($i > 0) {
             echo ' ' . $separator . ' ';
         }
 
-        if ($linkLast)
-        {
+        if ($linkLast) {
             echo '<a href="' . $item->link . '" rel="v:url" property="v:title">' . $item->name . '</a>';
-        }
-
-        else
-        {
+        } else {
             echo '<span property="v:title">' . $item->name . '</span>';
         }
     }
@@ -65,24 +48,20 @@ if (!$langLink)
 
 ++$i;
 
-if ($i < $count)
-{
+if ($i < $count) {
     require __FILE__;
 }
 
 --$i;
 
-if (!$langLink)
-{
+if (!$langLink) {
     echo '</span>';
 
-    if ($i > 0)
-    {
+    if ($i > 0) {
         echo '</span>';
     }
 }
 
-if ($i == 0)
-{
+if ($i == 0) {
     echo '</span>';
 }

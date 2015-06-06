@@ -12,42 +12,27 @@ defined( '_JEXEC' ) or die('Restricted access');
 $item = $list[$i];
 $langLink = $i == 1 && !empty($item->link) && !empty($list[$i - 1]->link) && $item->link == $list[$i - 1]->link;
 
-if (!$langLink)
-{
+if (!$langLink) {
     echo '<span' . ($i > 0 ? ' itemprop="child"' : '') . ' ' . $itemscope . ' itemtype="http://data-vocabulary.org/Breadcrumb">';
 
-    if ($i < $last)
-    {
-        if (empty($item->link))
-        {
+    if ($i < $last) {
+        if (empty($item->link)) {
             echo '<span itemprop="title">' . $item->name . '</span>';
-        }
-
-        else
-        {
+        } else {
             echo '<a href="'. $item->link . '" itemprop="url" class="pathway"><span itemprop="title">' . $item->name . '</span></a>';
         }
 
-        if ($i < $count - 2)
-        {
+        if ($i < $count - 2) {
             echo ' ' . $separator . ' ';
         }
-    }
-
-    elseif ($showLast)
-    {
-        if ($i > 0)
-        {
+    } elseif ($showLast) {
+        if ($i > 0) {
             echo ' ' . $separator . ' ';
         }
 
-        if ($linkLast)
-        {
+        if ($linkLast) {
             echo '<a href="' . $item->link . '" itemprop="url" class="pathway"><span itemprop="title">' . $item->name . '</span></a>';
-        }
-
-        else
-        {
+        } else {
             echo '<span itemprop="title">' . $item->name . '</span>';
         }
     }
@@ -55,12 +40,10 @@ if (!$langLink)
 
 ++$i;
 
-if ($i < $count)
-{
+if ($i < $count) {
     require __FILE__;
 }
 
-if (!$langLink)
-{
+if (!$langLink) {
     echo '</span>';
 }
