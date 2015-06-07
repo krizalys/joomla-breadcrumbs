@@ -17,10 +17,10 @@ if (!$langLink) {
 
     if ($i < $last && !empty($item->link) || $showLast && $linkLast) {
         echo ' ' . $itemscope . ' itemtype="http://data-vocabulary.org/Breadcrumb"';
-    }
 
-    if ($i > 0) {
-        echo ' itemprop="child"';
+        if ($i > 0) {
+            echo ' itemprop="child"';
+        }
     }
 
     echo '>';
