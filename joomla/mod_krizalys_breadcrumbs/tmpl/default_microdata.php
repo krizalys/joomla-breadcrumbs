@@ -14,6 +14,7 @@ $langLink = $i == 1 && !empty($item->link) && !empty($list[$i - 1]->link) && $it
 
 if (!$langLink) {
     echo '<span';
+
     if ($i < $last && !empty($item->link) || $last <= $i && $showLast && $linkLast) {
         echo ' ' . $itemscope . ' itemtype="http://data-vocabulary.org/Breadcrumb"';
 
