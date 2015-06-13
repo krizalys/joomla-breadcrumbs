@@ -25,7 +25,7 @@ The extension is licensed under the GNU General Public License version 3.
 Supported languages
 -------------------
 
-As of version 1.0.4, the multilingual flavor of Krizalys Breadcrumbs supports
+As of version 1.0.5, the multilingual flavor of Krizalys Breadcrumbs supports
 the following locales:
 
 * Dutch (nl_NL locale)

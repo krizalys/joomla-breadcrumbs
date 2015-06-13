@@ -1,8 +1,8 @@
 Change log
 ==========
 
-[Unreleased][unreleased]
-------------------------
+[1.0.5] - 2015-06-13
+--------------------
 ### Added
 - .editorconfig file.
 
@@ -46,7 +46,8 @@ Tool][#4].
 ### Changed
 - Minor code refactoring.
 
-[unreleased]: https://github.com/krizalys/breadcrumbs/compare/1.0.4...HEAD
+[unreleased]: https://github.com/krizalys/breadcrumbs/compare/1.0.5...HEAD
+[1.0.5]:      https://github.com/krizalys/breadcrumbs/compare/1.0.4...1.0.5
 [1.0.4]:      https://github.com/krizalys/breadcrumbs/compare/1.0.3...1.0.4
 [1.0.3]:      https://github.com/krizalys/breadcrumbs/compare/1.0.2...1.0.3
 [1.0.2]:      https://github.com/krizalys/breadcrumbs/compare/1.0.1...1.0.2
