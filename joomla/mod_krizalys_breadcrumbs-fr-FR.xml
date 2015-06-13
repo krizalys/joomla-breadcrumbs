@@ -2,13 +2,13 @@
 <install type="file" version="2.5" method="upgrade">
     <name>mod_krizalys_breadcrumbs_fr-FR</name>
     <version>1.0.4</version>
-    <author>Krizalys</author>
+    <description>Traduction française pour Krizalys Breadcrumbs</description>
     <creationDate>March 2013</creationDate>
-    <copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
-    <license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
+    <author>Krizalys</author>
     <authorEmail>support@krizalys.com</authorEmail>
     <authorUrl>www.krizalys.com</authorUrl>
-    <description>Traduction française pour Krizalys Breadcrumbs</description>
+    <copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
+    <license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
 
     <fileset>
         <files folder="language/fr-FR" target="language/fr-FR">

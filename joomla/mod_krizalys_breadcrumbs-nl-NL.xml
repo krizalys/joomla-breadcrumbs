@@ -2,13 +2,13 @@
 <install type="file" version="2.5" method="upgrade">
     <name>mod_krizalys_breadcrumbs_nl-NL</name>
     <version>1.0.4</version>
-    <author>Gijs van der Velden</author>
+    <description>Nederlandse vertaling door Gijs van der Velden</description>
     <creationDate>18/01/2015</creationDate>
-    <copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
-    <license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
+    <author>Gijs van der Velden</author>
     <authorEmail>gijsvandervelden@live.nl</authorEmail>
     <authorUrl>www.elitegameservers.net</authorUrl>
-    <description>Nederlandse vertaling door Gijs van der Velden</description>
+    <copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
+    <license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
 
     <fileset>
         <files folder="language/nl-NL" target="language/nl-NL">
