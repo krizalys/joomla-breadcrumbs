@@ -1,113 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="2.5" method="upgrade" client="site">
-	<name>mod_krizalys_breadcrumbs</name>
-	<version>1.0.4</version>
-	<author>Krizalys</author>
-	<creationDate>January 2013</creationDate>
-	<copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
-	<license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
-	<authorEmail>support@krizalys.com</authorEmail>
-	<authorUrl>www.krizalys.com</authorUrl>
-	<description>MOD_KRIZALYS_BREADCRUMBS_XML_DESCRIPTION</description>
+    <name>mod_krizalys_breadcrumbs</name>
+    <version>1.0.4</version>
+    <author>Krizalys</author>
+    <creationDate>January 2013</creationDate>
+    <copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
+    <license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
+    <authorEmail>support@krizalys.com</authorEmail>
+    <authorUrl>www.krizalys.com</authorUrl>
+    <description>MOD_KRIZALYS_BREADCRUMBS_XML_DESCRIPTION</description>
 
-	<files>
-		<folder>language</folder>
-		<folder>tmpl</folder>
-		<filename>helper.php</filename>
-		<filename>index.html</filename>
-		<filename module="mod_krizalys_breadcrumbs">mod_krizalys_breadcrumbs.php</filename>
-		<filename>mod_krizalys_breadcrumbs.xml</filename>
-	</files>
+    <files>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename module="mod_krizalys_breadcrumbs">mod_krizalys_breadcrumbs.php</filename>
+        <filename>mod_krizalys_breadcrumbs.xml</filename>
+    </files>
 
-	<updateservers>
-		<server type="extension" priority="1" name="Krizalys Breadcrumbs updates"><![CDATA[http://update.krizalys.com/extend/joomla/breadcrumbs.xml]]></server>
-	</updateservers>
+    <updateservers>
+        <server type="extension" priority="1" name="Krizalys Breadcrumbs updates"><![CDATA[http://update.krizalys.com/extend/joomla/breadcrumbs.xml]]></server>
+    </updateservers>
 
-	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_KRIZALYS_BREADCRUMBS" />
+    <help key="JHELP_EXTENSIONS_MODULE_MANAGER_KRIZALYS_BREADCRUMBS" />
 
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
-				<field
-					name="show_here"
-					type="radio"
-					default="1"
-					label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHERE_LABEL"
-					description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHERE_DESC"
-				>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="show_here"
+                    type="radio"
+                    default="1"
+                    label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHERE_LABEL"
+                    description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHERE_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 
-				<field
-					name="show_home"
-					type="radio"
-					default="1"
-					label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHOME_LABEL"
-					description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHOME_DESC"
-				>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
+                <field
+                    name="show_home"
+                    type="radio"
+                    default="1"
+                    label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHOME_LABEL"
+                    description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHOME_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 
-				<field
-					name="home_text"
-					type="text"
-					label="MOD_KRIZALYS_BREADCRUMBS_FIELD_HOMETEXT_LABEL"
-					description="MOD_KRIZALYS_BREADCRUMBS_FIELD_HOMETEXT_DESC"
-				/>
+                <field
+                    name="home_text"
+                    type="text"
+                    label="MOD_KRIZALYS_BREADCRUMBS_FIELD_HOMETEXT_LABEL"
+                    description="MOD_KRIZALYS_BREADCRUMBS_FIELD_HOMETEXT_DESC"
+                />
 
-				<field
-					name="show_last"
-					type="radio"
-					default="1"
-					label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWLAST_LABEL"
-					description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWLAST_DESC"
-				>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
+                <field
+                    name="show_last"
+                    type="radio"
+                    default="1"
+                    label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWLAST_LABEL"
+                    description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWLAST_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 
-				<field
-					name="link_last"
-					type="radio"
-					default="0"
-					label="MOD_KRIZALYS_BREADCRUMBS_FIELD_LINKLAST_LABEL"
-					description="MOD_KRIZALYS_BREADCRUMBS_FIELD_LINKLAST_DESC"
-				>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
+                <field
+                    name="link_last"
+                    type="radio"
+                    default="0"
+                    label="MOD_KRIZALYS_BREADCRUMBS_FIELD_LINKLAST_LABEL"
+                    description="MOD_KRIZALYS_BREADCRUMBS_FIELD_LINKLAST_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 
-				<field
-					name="use_xhtml"
-					type="radio"
-					default="0"
-					label="MOD_KRIZALYS_BREADCRUMBS_FIELD_USEXHTML_LABEL"
-					description="MOD_KRIZALYS_BREADCRUMBS_FIELD_USEXHTML_DESC"
-				>
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
-				</field>
+                <field
+                    name="use_xhtml"
+                    type="radio"
+                    default="0"
+                    label="MOD_KRIZALYS_BREADCRUMBS_FIELD_USEXHTML_LABEL"
+                    description="MOD_KRIZALYS_BREADCRUMBS_FIELD_USEXHTML_DESC"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 
-				<field
-					name="format"
-					type="radio"
-					default="microdata"
-					label="MOD_KRIZALYS_BREADCRUMBS_FIELD_FORMAT_LABEL"
-					description="MOD_KRIZALYS_BREADCRUMBS_FIELD_FORMAT_DESC"
-				>
-					<option value="microdata">MOD_KRIZALYS_BREADCRUMBS_FIELD_VALUE_MICRODATA</option>
-					<option value="RDFa">MOD_KRIZALYS_BREADCRUMBS_FIELD_VALUE_RDFA</option>
-				</field>
+                <field
+                    name="format"
+                    type="radio"
+                    default="microdata"
+                    label="MOD_KRIZALYS_BREADCRUMBS_FIELD_FORMAT_LABEL"
+                    description="MOD_KRIZALYS_BREADCRUMBS_FIELD_FORMAT_DESC"
+                >
+                    <option value="microdata">MOD_KRIZALYS_BREADCRUMBS_FIELD_VALUE_MICRODATA</option>
+                    <option value="RDFa">MOD_KRIZALYS_BREADCRUMBS_FIELD_VALUE_RDFA</option>
+                </field>
 
-				<field
-					name="separator"
-					type="text"
-					label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SEPARATOR_LABEL"
-					description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SEPARATOR_DESC"
-				/>
-			</fieldset>
-		</fields>
-	</config>
+                <field
+                    name="separator"
+                    type="text"
+                    label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SEPARATOR_LABEL"
+                    description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SEPARATOR_DESC"
+                />
+            </fieldset>
+        </fields>
+    </config>
 </extension>
