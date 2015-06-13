@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="file" version="2.5" method="upgrade">
-	<name>mod_krizalys_breadcrumbs_it-IT</name>
-	<version>1.0.4</version>
-	<author>Squall77it</author>
-	<creationDate>10/05/2013</creationDate>
-	<copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
-	<license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
-	<authorEmail>squall77it@gmail.com</authorEmail>
-	<authorUrl>www.krizalys.com</authorUrl>
-	<description>Traduzione Italiana per Krizalys Breadcrumbs</description>
+    <name>mod_krizalys_breadcrumbs_it-IT</name>
+    <version>1.0.4</version>
+    <author>Squall77it</author>
+    <creationDate>10/05/2013</creationDate>
+    <copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
+    <license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
+    <authorEmail>squall77it@gmail.com</authorEmail>
+    <authorUrl>www.krizalys.com</authorUrl>
+    <description>Traduzione Italiana per Krizalys Breadcrumbs</description>
 
-	<fileset>
-		<files folder="language/it-IT" target="language/it-IT">
-			<filename>it-IT.mod_krizalys_breadcrumbs.ini</filename>
-			<filename>it-IT.mod_krizalys_breadcrumbs.sys.ini</filename>
-			<filename>index.html</filename>
-		</files>
-	</fileset>
+    <fileset>
+        <files folder="language/it-IT" target="language/it-IT">
+            <filename>it-IT.mod_krizalys_breadcrumbs.ini</filename>
+            <filename>it-IT.mod_krizalys_breadcrumbs.sys.ini</filename>
+            <filename>index.html</filename>
+        </files>
+    </fileset>
 </install>

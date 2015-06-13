@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="file" version="2.5" method="upgrade">
-	<name>mod_krizalys_breadcrumbs_nl-NL</name>
-	<version>1.0.4</version>
-	<author>Gijs van der Velden</author>
-	<creationDate>18/01/2015</creationDate>
-	<copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
-	<license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
-	<authorEmail>gijsvandervelden@live.nl</authorEmail>
-	<authorUrl>www.elitegameservers.net</authorUrl>
-	<description>Nederlandse vertaling door Gijs van der Velden</description>
+    <name>mod_krizalys_breadcrumbs_nl-NL</name>
+    <version>1.0.4</version>
+    <author>Gijs van der Velden</author>
+    <creationDate>18/01/2015</creationDate>
+    <copyright>Copyright (C) 2008 - 2015 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
+    <license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
+    <authorEmail>gijsvandervelden@live.nl</authorEmail>
+    <authorUrl>www.elitegameservers.net</authorUrl>
+    <description>Nederlandse vertaling door Gijs van der Velden</description>
 
-	<fileset>
-		<files folder="language/nl-NL" target="language/nl-NL">
-			<filename>nl-NL.mod_krizalys_breadcrumbs.ini</filename>
-			<filename>nl-NL.mod_krizalys_breadcrumbs.sys.ini</filename>
-			<filename>index.html</filename>
-		</files>
-	</fileset>
+    <fileset>
+        <files folder="language/nl-NL" target="language/nl-NL">
+            <filename>nl-NL.mod_krizalys_breadcrumbs.ini</filename>
+            <filename>nl-NL.mod_krizalys_breadcrumbs.sys.ini</filename>
+            <filename>index.html</filename>
+        </files>
+    </fileset>
 </install>
