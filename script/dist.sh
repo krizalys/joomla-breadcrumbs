@@ -8,7 +8,7 @@ mkdir "${workdir}"
 cp -r "${DIR}" "${workdir}"
 
 if [ -f ${OUTPUTDIR}/mod_krizalys_breadcrumbs.zip ]; then
-	rm -f ${OUTPUTDIR}/mod_krizalys_breadcrumbs.zip
+    rm -f ${OUTPUTDIR}/mod_krizalys_breadcrumbs.zip
 fi
 
 wd="$(pwd)"; cd "${workdir}/mod_krizalys_breadcrumbs"; zip -r ${OUTPUTDIR}/mod_krizalys_breadcrumbs *; cd "${wd}"
