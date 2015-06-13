@@ -1,6 +1,12 @@
 Change log
 ==========
 
+[Unreleased][unreleased]
+------------------------
+
+### Changed
+- Configuration page look and feel.
+
 [1.0.5] - 2015-06-13
 --------------------
 ### Added
