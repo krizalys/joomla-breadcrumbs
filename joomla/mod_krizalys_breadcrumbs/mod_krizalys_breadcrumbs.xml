@@ -34,6 +34,7 @@
                     default="1"
                     label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHERE_LABEL"
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHERE_DESC"
+                    class="btn-group btn-group-yesno"
                 >
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
@@ -45,6 +46,7 @@
                     default="1"
                     label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHOME_LABEL"
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHOME_DESC"
+                    class="btn-group btn-group-yesno"
                 >
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
@@ -63,6 +65,7 @@
                     default="1"
                     label="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWLAST_LABEL"
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWLAST_DESC"
+                    class="btn-group btn-group-yesno"
                 >
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
@@ -74,6 +77,7 @@
                     default="0"
                     label="MOD_KRIZALYS_BREADCRUMBS_FIELD_LINKLAST_LABEL"
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_LINKLAST_DESC"
+                    class="btn-group btn-group-yesno"
                 >
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
@@ -85,6 +89,7 @@
                     default="0"
                     label="MOD_KRIZALYS_BREADCRUMBS_FIELD_USEXHTML_LABEL"
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_USEXHTML_DESC"
+                    class="btn-group btn-group-yesno"
                 >
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
@@ -92,7 +97,7 @@
 
                 <field
                     name="format"
-                    type="radio"
+                    type="list"
                     default="microdata"
                     label="MOD_KRIZALYS_BREADCRUMBS_FIELD_FORMAT_LABEL"
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_FORMAT_DESC"
