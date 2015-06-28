@@ -10,6 +10,7 @@ class suffix][#2]).
 
 ### Changed
 - Configuration page look and feel.
+- Compliance to the latest schema.org/BreadcrumbList specification.
 
 [1.0.5] - 2015-06-13
 --------------------

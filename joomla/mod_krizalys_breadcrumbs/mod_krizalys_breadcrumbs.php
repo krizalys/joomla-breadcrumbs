@@ -21,5 +21,4 @@ $linkLast = (bool) $params->get('link_last', false);
 $useXhtml = (bool) $params->get('use_xhtml', false);
 $format = $params->get('format', 'microdata');
 $separator = modKrizalysBreadcrumbsHelper::setSeparator($params->get('separator'));
-$itemscope = $useXhtml ? 'itemscope="itemscope"' : 'itemscope';
 require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default'));

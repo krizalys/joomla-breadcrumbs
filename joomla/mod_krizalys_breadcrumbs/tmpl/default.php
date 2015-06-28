@@ -8,20 +8,26 @@
 
 // no direct access
 defined( '_JEXEC' ) or die('Restricted access');
-?>
-<div class="krizalys_breadcrumb<?php echo $moduleclassSfx; ?>"<?php if ($format == 'RDFa') echo ' xmlns:v="http://rdf.data-vocabulary.org/#"'; ?>>
-    <?php if ($showHere): ?>
-    <span class="showHere"><?php echo JText::_('MOD_KRIZALYS_BREADCRUMBS_HERE'); ?></span>
-    <?php endif; ?>
-    <?php
-    $i = 0;
 
-    if (0 < $count) {
-        if ($format == 'RDFa') {
-            require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_rdfa'));
-        } else {
-            require JModuleHelper::getLayoutPath('mod_krizalys_breadcrumbs', $params->get('layout', 'default_microdata'));
-        }
-    }
-    ?>
-</div>
+$options = array(
+    'moduleclass_sfx' => $moduleclassSfx,
+    'show_here'       => $showHere,
+    'show_last'       => $showLast,
+    'link_last'       => $linkLast,
+    'use_xhtml'       => $useXhtml,
+    'separator'       => $separator
+);
+
+switch ($format) {
+    case 'RDFa':
+        require_once __DIR__ . '/../renderer/RdfaBreadcrumbsRenderer.php';
+        $renderer = new RdfaBreadcrumbsRenderer($options);
+        break;
+
+    default:
+        require_once __DIR__ . '/../renderer/MicrodataBreadcrumbsRenderer.php';
+        $renderer = new MicrodataBreadcrumbsRenderer($options);
+        break;
+}
+
+echo $renderer->render($list);
