@@ -4,6 +4,10 @@ Change log
 [Unreleased][unreleased]
 ------------------------
 
+### Added
+- Support for advanced configuration options (includes [#2: Add support for CSS
+class suffix][#2]).
+
 ### Changed
 - Configuration page look and feel.
 
@@ -58,5 +62,6 @@ Tool][#4].
 [1.0.3]:      https://github.com/krizalys/breadcrumbs/compare/1.0.2...1.0.3
 [1.0.2]:      https://github.com/krizalys/breadcrumbs/compare/1.0.1...1.0.2
 [1.0.1]:      https://github.com/krizalys/breadcrumbs/compare/1.0.0...1.0.1
+[#2]:         https://bitbucket.org/krizalys/breadcrumbs/issue/2/add-support-for-css-class-suffix
 [#3]:         https://bitbucket.org/krizalys/breadcrumbs/issue/3/php-error-message-when-using-microdata
 [#4]:         https://bitbucket.org/krizalys/breadcrumbs/issue/4/html-markup-does-not-validate-in-google
