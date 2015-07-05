@@ -28,12 +28,12 @@ Supported languages
 As of version 1.0.5, the multilingual flavor of Krizalys Breadcrumbs supports
 the following locales:
 
-* Dutch (nl_NL locale)
-* English (en_GB locale)
-* French (fr_FR locale)
-* German (de_DE locale)
-* Italian (it_IT locale)
-* Spanish (es_ES locale)
+* Dutch (`nl_NL` locale)
+* English (`en_GB` locale)
+* French (`fr_FR` locale)
+* German (`de_DE` locale)
+* Italian (`it_IT` locale)
+* Spanish (`es_ES` locale)
 
 Demonstration
 -------------
