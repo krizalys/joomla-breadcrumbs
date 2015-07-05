@@ -36,8 +36,8 @@
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHERE_DESC"
                     class="btn-group btn-group-yesno"
                 >
-                    <option value="0">JNO</option>
                     <option value="1">JYES</option>
+                    <option value="0">JNO</option>
                 </field>
 
                 <field
@@ -48,8 +48,8 @@
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWHOME_DESC"
                     class="btn-group btn-group-yesno"
                 >
-                    <option value="0">JNO</option>
                     <option value="1">JYES</option>
+                    <option value="0">JNO</option>
                 </field>
 
                 <field
@@ -67,8 +67,8 @@
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_SHOWLAST_DESC"
                     class="btn-group btn-group-yesno"
                 >
-                    <option value="0">JNO</option>
                     <option value="1">JYES</option>
+                    <option value="0">JNO</option>
                 </field>
 
                 <field
@@ -79,8 +79,8 @@
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_LINKLAST_DESC"
                     class="btn-group btn-group-yesno"
                 >
-                    <option value="0">JNO</option>
                     <option value="1">JYES</option>
+                    <option value="0">JNO</option>
                 </field>
 
                 <field
@@ -91,8 +91,8 @@
                     description="MOD_KRIZALYS_BREADCRUMBS_FIELD_USEXHTML_DESC"
                     class="btn-group btn-group-yesno"
                 >
-                    <option value="0">JNO</option>
                     <option value="1">JYES</option>
+                    <option value="0">JNO</option>
                 </field>
 
                 <field
