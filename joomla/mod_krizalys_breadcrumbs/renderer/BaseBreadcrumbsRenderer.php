@@ -87,14 +87,6 @@ abstract class BaseBreadcrumbsRenderer
         return $tag;
     }
 
-    abstract protected function getContainerAttrs();
-
-    abstract protected function getItemContainerAttrs();
-
-    abstract protected function getItemAttrs();
-
-    abstract protected function getNameAttrs();
-
     /**
      * @return string
      */
@@ -108,6 +100,14 @@ abstract class BaseBreadcrumbsRenderer
 
         return $separator;
     }
+
+    abstract protected function getContainerAttrs();
+
+    abstract protected function getItemContainerAttrs();
+
+    abstract protected function getItemAttrs();
+
+    abstract protected function getNameAttrs();
 
     /**
      * @param array $items
