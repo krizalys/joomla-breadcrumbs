@@ -1,8 +1,8 @@
 Change log
 ==========
 
-[Unreleased][unreleased]
-------------------------
+[1.1.0] - 2015-07-13
+--------------------
 
 ### Added
 - Support for advanced configuration options (includes [#2: Add support for CSS
@@ -57,7 +57,8 @@ Tool][#4].
 ### Changed
 - Minor code refactoring.
 
-[unreleased]: https://github.com/krizalys/breadcrumbs/compare/1.0.5...HEAD
+[unreleased]: https://github.com/krizalys/breadcrumbs/compare/1.1.0...HEAD
+[1.1.0]:      https://github.com/krizalys/breadcrumbs/compare/1.0.5...1.1.0
 [1.0.5]:      https://github.com/krizalys/breadcrumbs/compare/1.0.4...1.0.5
 [1.0.4]:      https://github.com/krizalys/breadcrumbs/compare/1.0.3...1.0.4
 [1.0.3]:      https://github.com/krizalys/breadcrumbs/compare/1.0.2...1.0.3
