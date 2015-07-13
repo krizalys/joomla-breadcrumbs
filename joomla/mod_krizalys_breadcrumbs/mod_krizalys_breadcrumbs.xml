@@ -12,6 +12,7 @@
 
     <files>
         <folder>language</folder>
+        <folder>renderer</folder>
         <folder>tmpl</folder>
         <filename>helper.php</filename>
         <filename>index.html</filename>
