@@ -26,6 +26,9 @@ abstract class BaseBreadcrumbsRenderer
     private $wrapSeparator;
     private $detachSeparator;
 
+    /**
+     * @param array $options
+     */
     public function __construct(array $options)
     {
         $this->moduleclassSfx = array_key_exists('moduleclass_sfx', $options) ? (string) $options['moduleclass_sfx'] : '';
@@ -59,11 +62,19 @@ abstract class BaseBreadcrumbsRenderer
         }
     }
 
+    /**
+     * @return bool
+     */
     public function isUseXhtml()
     {
         return $this->useXhtml;
     }
 
+    /**
+     * @param int $index
+     *
+     * @return string
+     */
     private function getMetaTag($index)
     {
         $tag = '<meta property="position" content="' . $index . '"';
@@ -84,6 +95,9 @@ abstract class BaseBreadcrumbsRenderer
 
     abstract protected function getNameAttrs();
 
+    /**
+     * @return string
+     */
     private function getSeparator()
     {
         $separator = $this->separator;
@@ -95,6 +109,14 @@ abstract class BaseBreadcrumbsRenderer
         return $separator;
     }
 
+    /**
+     * @param array $items
+     * @param int   $i
+     * @param bool  $link
+     * @param bool  $last
+     *
+     * @return string
+     */
     private function renderItem(array $items, $i, $link = true, $last = false)
     {
         $nItems = count($items);
@@ -135,6 +157,11 @@ abstract class BaseBreadcrumbsRenderer
         return $html;
     }
 
+    /**
+     * @param array $items
+     *
+     * @return string
+     */
     private function renderContainer(array $items)
     {
         $nItems = count($items);
@@ -172,6 +199,11 @@ abstract class BaseBreadcrumbsRenderer
         return $html;
     }
 
+    /**
+     * @param array $items
+     *
+     * @return string
+     */
     public function render(array $items)
     {
         return $this->renderContainer($items);
