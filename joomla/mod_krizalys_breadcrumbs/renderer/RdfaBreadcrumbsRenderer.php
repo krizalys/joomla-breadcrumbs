@@ -13,21 +13,33 @@ require_once __DIR__ . '/BaseBreadcrumbsRenderer.php';
 
 class RdfaBreadcrumbsRenderer extends BaseBreadcrumbsRenderer
 {
+    /**
+     * @return string
+     */
     protected function getContainerAttrs()
     {
         return 'vocab="http://schema.org/" typeof="BreadcrumbList"';
     }
 
+    /**
+     * @return string
+     */
     protected function getItemContainerAttrs()
     {
         return 'property="itemListElement" typeof="ListItem"';
     }
 
+    /**
+     * @return string
+     */
     protected function getItemAttrs()
     {
         return 'property="item" typeof="WebPage"';
     }
 
+    /**
+     * @return string
+     */
     protected function getNameAttrs()
     {
         return 'property="name"';

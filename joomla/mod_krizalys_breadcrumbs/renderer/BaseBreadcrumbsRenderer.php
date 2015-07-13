@@ -101,12 +101,24 @@ abstract class BaseBreadcrumbsRenderer
         return $separator;
     }
 
+    /**
+     * @return string
+     */
     abstract protected function getContainerAttrs();
 
+    /**
+     * @return string
+     */
     abstract protected function getItemContainerAttrs();
 
+    /**
+     * @return string
+     */
     abstract protected function getItemAttrs();
 
+    /**
+     * @return string
+     */
     abstract protected function getNameAttrs();
 
     /**

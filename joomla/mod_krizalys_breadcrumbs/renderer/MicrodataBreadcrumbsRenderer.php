@@ -13,6 +13,9 @@ require_once __DIR__ . '/BaseBreadcrumbsRenderer.php';
 
 class MicrodataBreadcrumbsRenderer extends BaseBreadcrumbsRenderer
 {
+    /**
+     * @return string
+     */
     private function makeItemScope()
     {
         $itemscope = 'itemscope';
@@ -24,18 +27,27 @@ class MicrodataBreadcrumbsRenderer extends BaseBreadcrumbsRenderer
         return $itemscope;
     }
 
+    /**
+     * @return string
+     */
     protected function getContainerAttrs()
     {
         return $this->makeItemScope()
             . ' itemtype="http://schema.org/BreadcrumbList"';
     }
 
+    /**
+     * @return string
+     */
     protected function getItemContainerAttrs()
     {
         return $this->makeItemScope() . ' itemprop="itemListElement"'
             . ' itemtype="http://schema.org/ListItem"';
     }
 
+    /**
+     * @return string
+     */
     protected function getItemAttrs()
     {
         return 'itemprop="item"';
