@@ -1,6 +1,12 @@
 Change log
 ==========
 
+[Unreleased][unreleased]
+------------------------
+
+### Added
+- BSD 3-Clause License.
+
 [1.1.0] - 2015-07-13
 --------------------
 
