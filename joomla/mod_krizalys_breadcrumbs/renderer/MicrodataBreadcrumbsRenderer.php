@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package    Krizalys.Breadcrumbs
  * @subpackage mod_krizalys_breadcrumbs
@@ -53,6 +54,9 @@ class MicrodataBreadcrumbsRenderer extends BaseBreadcrumbsRenderer
         return 'itemprop="item"';
     }
 
+    /**
+     * @return string
+     */
     protected function getNameAttrs()
     {
         return 'itemprop="name"';

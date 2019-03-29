@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package    Krizalys.Breadcrumbs
  * @subpackage mod_krizalys_breadcrumbs

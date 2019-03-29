@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package    Krizalys.Breadcrumbs
  * @subpackage mod_krizalys_breadcrumbs
@@ -11,19 +12,74 @@ defined( '_JEXEC' ) or die('Restricted access');
 
 abstract class BaseBreadcrumbsRenderer
 {
+    /**
+     * @var string
+     */
     private $moduleclassSfx;
+
+    /**
+     * @var bool
+     */
     private $showHere;
+
+    /**
+     * @var bool
+     */
     private $showHome;
+
+    /**
+     * @var bool
+     */
     private $showLast;
+
+    /**
+     * @var bool
+     */
     private $linkLast;
+
+    /**
+     * @var bool
+     */
     private $useXhtml;
+
+    /**
+     * @var string
+     */
     private $separator;
+
+    /**
+     * @var string
+     */
     private $tagContainer;
+
+    /**
+     * @var string
+     */
     private $tagHere;
+
+    /**
+     * @var string
+     */
     private $classHere;
+
+    /**
+     * @var bool
+     */
     private $markerHere;
+
+    /**
+     * @var string
+     */
     private $tagItemContainer;
+
+    /**
+     * @var bool
+     */
     private $wrapSeparator;
+
+    /**
+     * @var bool
+     */
     private $detachSeparator;
 
     /**

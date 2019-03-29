@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @package    Krizalys.Breadcrumbs
  * @subpackage mod_krizalys_breadcrumbs
@@ -11,6 +12,11 @@ defined( '_JEXEC' ) or die('Restricted access');
 
 class modKrizalysBreadcrumbsHelper
 {
+    /**
+     * @param JRegistry $params
+     *
+     * @return array
+     */
     public static function getList(&$params)
     {
         $app = JFactory::getApplication();
@@ -44,6 +50,11 @@ class modKrizalysBreadcrumbsHelper
         return $crumbs;
     }
 
+    /**
+     * @param null|string $custom
+     *
+     * @return string
+     */
     public static function setSeparator($custom = null)
     {
         $lang = JFactory::getLanguage();
