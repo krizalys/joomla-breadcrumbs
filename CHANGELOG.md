@@ -7,6 +7,9 @@ Change log
 ### Added
 - BSD 3-Clause License.
 
+### Fixed
+- [#3: In micro data , error in position field][github-issue-3].
+
 [1.1.0] - 2015-07-13
 --------------------
 
@@ -73,3 +76,4 @@ Tool][bitbucket-issue-4].
 [bitbucket-issue-2]: https://bitbucket.org/krizalys/breadcrumbs/issue/2/add-support-for-css-class-suffix
 [bitbucket-issue-3]: https://bitbucket.org/krizalys/breadcrumbs/issue/3/php-error-message-when-using-microdata
 [bitbucket-issue-4]: https://bitbucket.org/krizalys/breadcrumbs/issue/4/html-markup-does-not-validate-in-google
+[github-issue-3]:    https://github.com/krizalys/breadcrumbs/issues/3

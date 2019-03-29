@@ -77,7 +77,7 @@ abstract class BaseBreadcrumbsRenderer
      */
     private function getMetaTag($index)
     {
-        $tag = '<meta property="position" content="' . $index . '"';
+        $tag = '<meta itemprop="position" content="' . $index . '"';
 
         if ($this->isUseXhtml()) {
             $tag .= ' /';
