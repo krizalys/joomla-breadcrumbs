@@ -1,8 +1,8 @@
 Change log
 ==========
 
-[Unreleased][unreleased]
-------------------------
+[1.1.1] - 2019-03-29
+--------------------
 
 ### Added
 - BSD 3-Clause License.
@@ -66,7 +66,8 @@ Tool][bitbucket-issue-4].
 ### Changed
 - Minor code refactoring.
 
-[unreleased]:        https://github.com/krizalys/breadcrumbs/compare/1.1.0...HEAD
+[unreleased]:        https://github.com/krizalys/breadcrumbs/compare/1.1.1...HEAD
+[1.1.1]:             https://github.com/krizalys/breadcrumbs/compare/1.1.0...1.1.1
 [1.1.0]:             https://github.com/krizalys/breadcrumbs/compare/1.0.5...1.1.0
 [1.0.5]:             https://github.com/krizalys/breadcrumbs/compare/1.0.4...1.0.5
 [1.0.4]:             https://github.com/krizalys/breadcrumbs/compare/1.0.3...1.0.4

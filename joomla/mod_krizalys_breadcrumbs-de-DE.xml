@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="file" version="2.5" method="upgrade">
     <name>mod_krizalys_breadcrumbs_de-DE</name>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <description>Deutsche Übersetzung der Krizalys Breadcrumbs</description>
     <creationDate>26/10/2013</creationDate>
     <author>Karsten Müller</author>

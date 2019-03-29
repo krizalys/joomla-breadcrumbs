@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERSION="1.1.0"
+VERSION="1.1.1"
 
 cd joomla/mod_krizalys_breadcrumbs; zip -r ../../mod_krizalys_breadcrumbs-${VERSION}-all-languages.zip .; cd ../..
 cp mod_krizalys_breadcrumbs-${VERSION}-all-languages.zip mod_krizalys_breadcrumbs-${VERSION}.zip
