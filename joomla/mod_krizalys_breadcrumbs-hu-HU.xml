@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="file" version="2.5" method="upgrade">
+    <name>mod_krizalys_breadcrumbs_hu-HU</name>
+    <version>1.1.1</version>
+    <description>Magyar fordítás a Krizalys Breadcrumbs-hoz</description>
+    <creationDate>20/09/2019</creationDate>
+    <author>Balázs Keresztury</author>
+    <authorEmail>support@krizalys.com</authorEmail>
+    <authorUrl>tux.hm</authorUrl>
+    <copyright>Copyright (C) 2008 - 2019 Krizalys (http://www.krizalys.com/). All rights reserved.</copyright>
+    <license>GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html)</license>
+
+    <fileset>
+        <files folder="language/hu-HU" target="language/hu-HU">
+            <filename>hu-HU.mod_krizalys_breadcrumbs.ini</filename>
+            <filename>hu-HU.mod_krizalys_breadcrumbs.sys.ini</filename>
+            <filename>index.html</filename>
+        </files>
+    </fileset>
+</install>
