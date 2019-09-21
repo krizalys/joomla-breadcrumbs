@@ -20,7 +20,7 @@ their website to remain XHTML compliant. To make yourself a better idea of the
 module, please check our [live demo][krizalys-breadcrumbs-demo] and for more
 information, please consult the [documentation][documentation].
 
-The extension is licensed under the [GNU General Public License version 3][gpl].
+The extension is licensed under the [3-Clause BSD License][bsd-3-clause].
 
 Supported languages
 -------------------
@@ -69,7 +69,7 @@ please [contact us][contact].
 [amazon]:                    http://www.amazon.com/
 [krizalys-breadcrumbs-demo]: http://demo.krizalys.com/joomla/demos/krizalys-breadcrumbs#demo_breadcrumbs
 [documentation]:             http://www.krizalys.com/book/krizalys-breadcrumbs-documentation
-[gpl]:                       http://www.gnu.org/licenses/gpl.html
+[bsd-3-clause]:              https://opensource.org/licenses/BSD-3-Clause
 [krizalys-demos]:            http://demo.krizalys.com/joomla/demos/krizalys-breadcrumbs
 [google-testing-tool]:       http://www.google.com/webmasters/tools/richsnippets?q=http%3A%2F%2Fdemo.krizalys.com%2Fjoomla%2Fdemos%2Fkrizalys-breadcrumbs
 [contact]:                   http://www.krizalys.com/contact
