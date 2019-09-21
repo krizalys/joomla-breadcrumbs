@@ -1,6 +1,13 @@
 Change log
 ==========
 
+[Unreleased][unreleased]
+------------------------
+
+### Added
+- Support for `hu_HU` locale (translation by Balázs Keresztury
+<https://belidzs.hu/>).
+
 [1.1.1] - 2019-03-29
 --------------------
 

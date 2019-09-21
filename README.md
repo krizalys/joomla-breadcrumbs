@@ -32,6 +32,7 @@ the following locales:
 * English (`en_GB` locale)
 * French (`fr_FR` locale)
 * German (`de_DE` locale)
+* Hungarian (`hu_HU` locale)
 * Italian (`it_IT` locale)
 * Spanish (`es_ES` locale)
 
@@ -55,6 +56,7 @@ Breadcrumbs' translations:
 * Gijs van der Velden <http://www.elitegameservers.net/> (Dutch translation)
 * Karsten Müller <http://tux.hm/> (German translation)
 * Christophe Vidal <http://www.krizalys.com/> (French translation)
+* Balázs Keresztury <https://belidzs.hu/> (Hungarian translation)
 * Squall77it (Italian translation)
 * Andrés Benavente (Spanish translation)
 
