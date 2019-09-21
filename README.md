@@ -54,8 +54,8 @@ Krizalys would like to thank the people that contributed to Krizalys
 Breadcrumbs' translations:
 
 * Gijs van der Velden <http://www.elitegameservers.net/> (Dutch translation)
-* Karsten Müller <http://tux.hm/> (German translation)
 * Christophe Vidal <http://www.krizalys.com/> (French translation)
+* Karsten Müller <http://tux.hm/> (German translation)
 * Balázs Keresztury <https://belidzs.hu/> (Hungarian translation)
 * Squall77it (Italian translation)
 * Andrés Benavente (Spanish translation)
