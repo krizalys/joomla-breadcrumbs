@@ -10,6 +10,7 @@ Change log
 
 ### Fixed
 - License headers.
+- `es_ES` translation.
 
 [1.1.1] - 2019-03-29
 --------------------

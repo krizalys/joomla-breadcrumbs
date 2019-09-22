@@ -2,7 +2,7 @@
 <install type="file" version="2.5" method="upgrade">
     <name>mod_krizalys_breadcrumbs_es-ES</name>
     <version>1.1.1</version>
-    <description>Traduction française pour Krizalys Breadcrumbs</description>
+    <description>Traducción Española para Krizalys Breadcrumbs</description>
     <creationDate>March 2013</creationDate>
     <author>Andrés Benavente</author>
     <authorEmail>support@krizalys.com</authorEmail>
