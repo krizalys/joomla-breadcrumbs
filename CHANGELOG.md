@@ -1,8 +1,8 @@
 Change log
 ==========
 
-[Unreleased][unreleased]
-------------------------
+[1.2.0] - 2019-09-22
+--------------------
 
 ### Added
 - Support for `hu_HU` locale (translation by Balázs Keresztury
@@ -77,7 +77,8 @@ Tool][bitbucket-issue-4].
 ### Changed
 - Minor code refactoring.
 
-[unreleased]:        https://github.com/krizalys/breadcrumbs/compare/1.1.1...HEAD
+[unreleased]:        https://github.com/krizalys/breadcrumbs/compare/1.2.0...HEAD
+[1.2.0]:             https://github.com/krizalys/breadcrumbs/compare/1.1.1...1.2.0
 [1.1.1]:             https://github.com/krizalys/breadcrumbs/compare/1.1.0...1.1.1
 [1.1.0]:             https://github.com/krizalys/breadcrumbs/compare/1.0.5...1.1.0
 [1.0.5]:             https://github.com/krizalys/breadcrumbs/compare/1.0.4...1.0.5
