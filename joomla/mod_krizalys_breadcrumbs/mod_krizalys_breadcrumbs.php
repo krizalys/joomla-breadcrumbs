@@ -4,7 +4,7 @@
  * @package    Krizalys.Breadcrumbs
  * @subpackage mod_krizalys_breadcrumbs
  * @copyright  Copyright (C) 2008 - 2019 Krizalys (http://www.krizalys.com/). All rights reserved.
- * @license    GNU General Public License version 3 (http://www.gnu.org/licenses/gpl.html).
+ * @license    3-Clause BSD License (https://opensource.org/licenses/BSD-3-Clause).
  */
 
 // no direct access

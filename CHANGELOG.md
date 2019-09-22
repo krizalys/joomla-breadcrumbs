@@ -8,6 +8,9 @@ Change log
 - Support for `hu_HU` locale (translation by Balázs Keresztury
 <https://belidzs.hu/>).
 
+### Fixed
+- License headers.
+
 [1.1.1] - 2019-03-29
 --------------------
 
