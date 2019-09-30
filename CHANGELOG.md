@@ -1,6 +1,13 @@
 Change log
 ==========
 
+[Unreleased][unreleased]
+------------------------
+
+### Fixed
+
+- [#6: [RDFa] A value for the position field is required][github-issue-6].
+
 [1.2.0] - 2019-09-22
 --------------------
 
@@ -108,3 +115,4 @@ Tool][bitbucket-issue-4].
 [bitbucket-issue-3]: https://bitbucket.org/krizalys/breadcrumbs/issue/3/php-error-message-when-using-microdata
 [bitbucket-issue-4]: https://bitbucket.org/krizalys/breadcrumbs/issue/4/html-markup-does-not-validate-in-google
 [github-issue-3]:    https://github.com/krizalys/breadcrumbs/issues/3
+[github-issue-6]:    https://github.com/krizalys/breadcrumbs/issues/6

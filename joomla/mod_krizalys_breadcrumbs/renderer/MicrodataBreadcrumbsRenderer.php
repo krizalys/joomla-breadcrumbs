@@ -29,6 +29,23 @@ class MicrodataBreadcrumbsRenderer extends BaseBreadcrumbsRenderer
     }
 
     /**
+     * @param int $index
+     *
+     * @return string
+     */
+    protected function getMetaTag($index)
+    {
+        $tag = '<meta itemprop="position" content="' . $index . '"';
+
+        if ($this->isUseXhtml()) {
+            $tag .= ' /';
+        }
+
+        $tag .= '>';
+        return $tag;
+    }
+
+    /**
      * @return string
      */
     protected function getContainerAttrs()

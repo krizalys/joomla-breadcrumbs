@@ -127,23 +127,6 @@ abstract class BaseBreadcrumbsRenderer
     }
 
     /**
-     * @param int $index
-     *
-     * @return string
-     */
-    private function getMetaTag($index)
-    {
-        $tag = '<meta itemprop="position" content="' . $index . '"';
-
-        if ($this->isUseXhtml()) {
-            $tag .= ' /';
-        }
-
-        $tag .= '>';
-        return $tag;
-    }
-
-    /**
      * @return string
      */
     private function getSeparator()
@@ -156,6 +139,13 @@ abstract class BaseBreadcrumbsRenderer
 
         return $separator;
     }
+
+    /**
+     * @param int $index
+     *
+     * @return string
+     */
+    abstract protected function getMetaTag($index);
 
     /**
      * @return string

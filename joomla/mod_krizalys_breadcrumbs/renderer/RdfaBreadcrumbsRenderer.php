@@ -15,6 +15,23 @@ require_once __DIR__ . '/BaseBreadcrumbsRenderer.php';
 class RdfaBreadcrumbsRenderer extends BaseBreadcrumbsRenderer
 {
     /**
+     * @param int $index
+     *
+     * @return string
+     */
+    protected function getMetaTag($index)
+    {
+        $tag = '<meta property="position" content="' . $index . '"';
+
+        if ($this->isUseXhtml()) {
+            $tag .= ' /';
+        }
+
+        $tag .= '>';
+        return $tag;
+    }
+
+    /**
      * @return string
      */
     protected function getContainerAttrs()
