@@ -47,6 +47,20 @@ class modKrizalysBreadcrumbsHelper
             array_unshift($crumbs, $item);
         }
 
+        /**
+         * Force-link last item if it is not in menu.
+         *
+         * @see https://github.com/krizalys/breadcrumbs/issues/1
+         */
+        if ($params->get('link_last', 1)) {
+            end($crumbs);
+            $last = key($crumbs);
+
+            if (empty($crumbs[$last]->link)) {
+                $crumbs[$last]->link = JURI::current();
+            }
+        }
+
         return $crumbs;
     }
 
