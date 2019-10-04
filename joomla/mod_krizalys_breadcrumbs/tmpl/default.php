@@ -30,5 +30,7 @@ switch ($format) {
         $renderer = new MicrodataBreadcrumbsRenderer($options);
         break;
 }
-
-echo $renderer->render($list);
+?>
+<div aria-label="<?= $module->name ?>" role="navigation">
+    <?= $renderer->render($list) ?>
+</div>

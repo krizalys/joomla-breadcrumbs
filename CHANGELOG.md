@@ -4,6 +4,10 @@ Change log
 [Unreleased][unreleased]
 ------------------------
 
+### Changed
+
+- Made layout more consistent with Joomla!'s built-in breadcrumbs module.
+
 ### Fixed
 
 - [#6: [RDFa] A value for the position field is required][github-issue-6].

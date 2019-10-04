@@ -187,7 +187,7 @@ abstract class BaseBreadcrumbsRenderer
             $attrs .= ' class="active"';
         }
 
-        $html .= '<' . $this->tagItemContainer . ' ' . $attrs . '>';
+        $html .= '<' . $this->tagItemContainer . ' ' . $attrs . ">\n";
 
         if (!$link || empty($item->link)) {
             $html .= '<span ' . $this->getItemAttrs() . '>';
@@ -200,18 +200,17 @@ abstract class BaseBreadcrumbsRenderer
         $html  .= '<span ' . $attrs . '>' . $item->name . '</span>';
 
         if (!$link || empty($item->link)) {
-            $html .= '</span>';
+            $html .= "</span>\n";
         } else {
-            $html .= '</a>';
+            $html .= "</a>\n";
         }
-
-        $html .= $this->getMetaTag($i + 1);
 
         if (!$this->detachSeparator && $i != $iLast) {
-            $html .= $this->getSeparator();
+            $html .= $this->getSeparator() . "\n";
         }
 
-        $html .= '</' . $this->tagItemContainer . '>';
+        $html .= $this->getMetaTag($i + 1) . "\n";
+        $html .= '</' . $this->tagItemContainer . ">\n";
         return $html;
     }
 
@@ -227,7 +226,7 @@ abstract class BaseBreadcrumbsRenderer
 
         $html = '<' . $this->tagContainer . ' class="breadcrumb' .
             $this->moduleclassSfx . ' krizalys_breadcrumb'
-            . $this->moduleclassSfx . '" ' . $this->getContainerAttrs() . '>';
+            . $this->moduleclassSfx . '" ' . $this->getContainerAttrs() . ">\n";
 
         if ($this->markerHere) {
             $here = $this->showHere ?
@@ -237,8 +236,9 @@ abstract class BaseBreadcrumbsRenderer
             $here = JText::_('MOD_KRIZALYS_BREADCRUMBS_HERE');
         }
 
-        $html .= '<' . $this->tagHere . ' class="' . $this->classHere . '">'
-            . $here . '</' . $this->tagHere . '>';
+        $html .= '<' . $this->tagHere . ">\n"
+            . $here . "\n"
+            . '</' . $this->tagHere . ">\n";
 
         foreach ($items as $i => $item) {
             $isLast = $i == $iLast;
@@ -253,7 +253,7 @@ abstract class BaseBreadcrumbsRenderer
             }
         }
 
-        $html .= '</' . $this->tagContainer . '>';
+        $html .= '</' . $this->tagContainer . ">\n";
         return $html;
     }
 
