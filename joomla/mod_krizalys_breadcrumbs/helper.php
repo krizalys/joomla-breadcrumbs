@@ -36,12 +36,14 @@ class modKrizalysBreadcrumbsHelper
 
         for ($i = 0; $i < $count; ++$i) {
             $crumbs[$i] = new stdClass();
+            $crumbs[$i]->id = JRoute::_($items[$i]->link, true, -1);
             $crumbs[$i]->name = stripslashes(htmlspecialchars($items[$i]->name, ENT_COMPAT, 'UTF-8'));
             $crumbs[$i]->link = JRoute::_($items[$i]->link);
         }
 
         if ($params->get('show_home', 1)) {
             $item = new stdClass();
+            $item->id = JRoute::_('index.php?Itemid=' . $home->id, true, -1);
             $item->name = htmlspecialchars($params->get('home_text', JText::_('MOD_KRIZALYS_BREADCRUMBS_HOME')));
             $item->link = JRoute::_('index.php?Itemid=' . $home->id);
             array_unshift($crumbs, $item);
@@ -57,6 +59,7 @@ class modKrizalysBreadcrumbsHelper
             $last = key($crumbs);
 
             if (empty($crumbs[$last]->link)) {
+                $crumbs[$last]->id = JURI::current();
                 $crumbs[$last]->link = JURI::current();
             }
         }
