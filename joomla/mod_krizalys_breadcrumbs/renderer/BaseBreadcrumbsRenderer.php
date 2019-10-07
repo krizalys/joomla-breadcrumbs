@@ -190,7 +190,13 @@ abstract class BaseBreadcrumbsRenderer
         $html .= '<' . $this->tagItemContainer . ' ' . $attrs . ">\n";
 
         if (!$link || empty($item->link)) {
-            $html .= '<span ' . $this->getItemAttrs() . '>';
+            $html .= '<span ' . $this->getItemAttrs();
+
+            if (!empty($item->id)) {
+                $html .= ' itemscope itemtype="http://schema.org/Thing" itemid="' . $item->id . '"';
+            }
+
+            $html .= '>';
         } else {
             $html .= '<a href="' . $item->link . '" class="pathway" '
                 . $this->getItemAttrs() . '>';

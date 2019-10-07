@@ -1,6 +1,13 @@
 Change log
 ==========
 
+[Unreleased][unreleased]
+------------------------
+
+### Fixed
+
+- [#7: [Microdata] The value provided for id must be a valid URL][github-issue-7].
+
 [1.2.1] - 2019-10-09
 --------------------
 
@@ -124,3 +131,4 @@ Tool][bitbucket-issue-4].
 [github-issue-1]:    https://github.com/krizalys/joomla-breadcrumbs/issues/1
 [github-issue-3]:    https://github.com/krizalys/joomla-breadcrumbs/issues/3
 [github-issue-6]:    https://github.com/krizalys/joomla-breadcrumbs/issues/6
+[github-issue-7]:    https://github.com/krizalys/joomla-breadcrumbs/issues/7
