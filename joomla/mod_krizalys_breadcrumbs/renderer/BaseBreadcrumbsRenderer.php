@@ -48,41 +48,6 @@ abstract class BaseBreadcrumbsRenderer
     private $separator;
 
     /**
-     * @var string
-     */
-    private $tagContainer;
-
-    /**
-     * @var string
-     */
-    private $tagHere;
-
-    /**
-     * @var string
-     */
-    private $classHere;
-
-    /**
-     * @var bool
-     */
-    private $markerHere;
-
-    /**
-     * @var string
-     */
-    private $tagItemContainer;
-
-    /**
-     * @var bool
-     */
-    private $wrapSeparator;
-
-    /**
-     * @var bool
-     */
-    private $detachSeparator;
-
-    /**
      * @param array $options
      */
     public function __construct(array $options)
@@ -94,28 +59,6 @@ abstract class BaseBreadcrumbsRenderer
         $this->linkLast       = array_key_exists('link_last', $options) ? (bool) $options['link_last'] : false;
         $this->useXhtml       = array_key_exists('use_xhtml', $options) ? (bool) $options['use_xhtml'] : false;
         $this->separator      = array_key_exists('separator', $options) ? (string) $options['separator'] : '';
-
-        // Detect Joomla! version to apply matching markup.
-        $version = new JVersion();
-        $joomla3 = $version->isCompatible('3.0');
-
-        if ($joomla3) {
-            $this->tagContainer     = 'ul';
-            $this->tagHere          = 'li';
-            $this->classHere        = 'active';
-            $this->markerHere       = true;
-            $this->tagItemContainer = 'li';
-            $this->wrapSeparator    = true;
-            $this->detachSeparator  = false;
-        } else {
-            $this->tagContainer     = 'div';
-            $this->tagHere          = 'span';
-            $this->classHere        = 'showHere';
-            $this->markerHere       = false;
-            $this->tagItemContainer = 'span';
-            $this->wrapSeparator    = false;
-            $this->detachSeparator  = true;
-        }
     }
 
     /**
@@ -132,11 +75,7 @@ abstract class BaseBreadcrumbsRenderer
     private function getSeparator()
     {
         $separator = $this->separator;
-
-        if ($this->wrapSeparator) {
-            $separator = '<span class="divider">' . $separator . '</span>';
-        }
-
+        $separator = '<span class="divider">' . $separator . '</span>';
         return $separator;
     }
 
@@ -187,7 +126,7 @@ abstract class BaseBreadcrumbsRenderer
             $attrs .= ' class="active"';
         }
 
-        $html .= '<' . $this->tagItemContainer . ' ' . $attrs . ">\n";
+        $html .= '<li ' . $attrs . ">\n";
 
         if (!$link || empty($item->link)) {
             $html .= '<span ' . $this->getItemAttrs();
@@ -211,12 +150,13 @@ abstract class BaseBreadcrumbsRenderer
             $html .= "</a>\n";
         }
 
-        if (!$this->detachSeparator && $i != $iLast) {
+        $html .= $this->getMetaTag($i + 1) . "\n";
+
+        if ($i != $iLast) {
             $html .= $this->getSeparator() . "\n";
         }
 
-        $html .= $this->getMetaTag($i + 1) . "\n";
-        $html .= '</' . $this->tagItemContainer . ">\n";
+        $html .= "</li>\n";
         return $html;
     }
 
@@ -230,36 +170,28 @@ abstract class BaseBreadcrumbsRenderer
         $nItems = count($items);
         $iLast  = $nItems - 1;
 
-        $html = '<' . $this->tagContainer . ' class="breadcrumb' .
+        $html = '<ul class="breadcrumb' .
             $this->moduleclassSfx . ' krizalys_breadcrumb'
             . $this->moduleclassSfx . '" ' . $this->getContainerAttrs() . ">\n";
 
-        if ($this->markerHere) {
-            $here = $this->showHere ?
-                JText::_('MOD_KRIZALYS_BREADCRUMBS_HERE') . '&nbsp;'
-                : '<span class="divider icon-location"></span>';
-        } else {
-            $here = JText::_('MOD_KRIZALYS_BREADCRUMBS_HERE');
-        }
+        $here = $this->showHere ?
+            JText::_('MOD_KRIZALYS_BREADCRUMBS_HERE') . '&nbsp;'
+            : '<span class="divider icon-location"></span>';
 
-        $html .= '<' . $this->tagHere . ">\n"
+        $html .= "<li class=\"active\">\n"
             . $here . "\n"
-            . '</' . $this->tagHere . ">\n";
+            . "</li>\n";
 
         foreach ($items as $i => $item) {
             $isLast = $i == $iLast;
 
             if (!$isLast || $this->showLast) {
-                if ($this->detachSeparator && 0 < $i) {
-                    $html .= ' ' . $this->getSeparator() . ' ';
-                }
-
                 $html .= $this->renderItem($items, $i,
                     !$isLast || $this->linkLast, $isLast);
             }
         }
 
-        $html .= '</' . $this->tagContainer . ">\n";
+        $html .= "</ul>\n";
         return $html;
     }
 

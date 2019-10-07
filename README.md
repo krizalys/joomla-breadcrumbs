@@ -14,11 +14,11 @@ a [Google search for Stephen King][google-search-example] returns a result from
 
 ![Google search for Stephen King](http://demo.krizalys.com/joomla/images/rich-breadcrumbs.png)
 
-The module supports both Joomla! 2.5 and Joomla! 3, and Microdata and RDFa
-formats. Webmasters can also choose to generate only XHTML markup, allowing
-their website to remain XHTML compliant. To make yourself a better idea of the
-module, please check our [live demo][krizalys-breadcrumbs-demo] and for more
-information, please consult the [documentation][documentation].
+The module supports Joomla! 3, and Microdata and RDFa formats. Webmasters can
+also choose to generate only XHTML markup, allowing their website to remain
+XHTML compliant. To make yourself a better idea of the module, please check our
+[live demo][krizalys-breadcrumbs-demo] and for more information, please consult
+the [documentation][documentation].
 
 The extension is licensed under the [3-Clause BSD License][bsd-3-clause].
 
