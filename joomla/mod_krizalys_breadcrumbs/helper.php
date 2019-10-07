@@ -50,7 +50,7 @@ class modKrizalysBreadcrumbsHelper
         /**
          * Force-link last item if it is not in menu.
          *
-         * @see https://github.com/krizalys/breadcrumbs/issues/1
+         * @see https://github.com/krizalys/joomla-breadcrumbs/issues/1
          */
         if ($params->get('link_last', 1)) {
             end($crumbs);
