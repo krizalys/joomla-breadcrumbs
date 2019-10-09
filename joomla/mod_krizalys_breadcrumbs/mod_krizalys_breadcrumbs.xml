@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="2.5" method="upgrade" client="site">
     <name>mod_krizalys_breadcrumbs</name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <description>MOD_KRIZALYS_BREADCRUMBS_XML_DESCRIPTION</description>
     <creationDate>January 2013</creationDate>
     <author>Krizalys</author>

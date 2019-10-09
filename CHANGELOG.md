@@ -1,8 +1,8 @@
 Change log
 ==========
 
-[Unreleased][unreleased]
-------------------------
+[1.2.1] - 2019-10-09
+--------------------
 
 ### Changed
 
@@ -108,7 +108,8 @@ Tool][bitbucket-issue-4].
 
 - Minor code refactoring.
 
-[unreleased]:        https://github.com/krizalys/joomla-breadcrumbs/compare/1.2.0...HEAD
+[unreleased]:        https://github.com/krizalys/joomla-breadcrumbs/compare/1.2.1...HEAD
+[1.2.1]:             https://github.com/krizalys/joomla-breadcrumbs/compare/1.2.0...1.2.1
 [1.2.0]:             https://github.com/krizalys/joomla-breadcrumbs/compare/1.1.1...1.2.0
 [1.1.1]:             https://github.com/krizalys/joomla-breadcrumbs/compare/1.1.0...1.1.1
 [1.1.0]:             https://github.com/krizalys/joomla-breadcrumbs/compare/1.0.5...1.1.0

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="file" version="2.5" method="upgrade">
     <name>mod_krizalys_breadcrumbs_hu-HU</name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <description>Magyar fordítás a Krizalys Breadcrumbs-hoz</description>
     <creationDate>20/09/2019</creationDate>
     <author>Balázs Keresztury</author>

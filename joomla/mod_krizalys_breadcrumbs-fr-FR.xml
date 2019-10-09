@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="file" version="2.5" method="upgrade">
     <name>mod_krizalys_breadcrumbs_fr-FR</name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <description>Traduction française pour Krizalys Breadcrumbs</description>
     <creationDate>March 2013</creationDate>
     <author>Krizalys</author>

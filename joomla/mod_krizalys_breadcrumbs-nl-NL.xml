@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <install type="file" version="2.5" method="upgrade">
     <name>mod_krizalys_breadcrumbs_nl-NL</name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <description>Nederlandse vertaling door Gijs van der Velden</description>
     <creationDate>18/01/2015</creationDate>
     <author>Gijs van der Velden</author>
