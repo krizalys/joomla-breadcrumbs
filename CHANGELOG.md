@@ -12,6 +12,7 @@ Change log
 
 - [#6: [RDFa] A value for the position field is required][github-issue-6].
 - [#1: If last link is not in menu - no url displayed][github-issue-1].
+- `es_ES` translation.
 
 [1.2.0] - 2019-09-22
 --------------------
