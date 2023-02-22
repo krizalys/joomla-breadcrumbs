@@ -183,6 +183,10 @@ abstract class BaseBreadcrumbsRenderer
         $html   = '';
         $attrs  = $this->getItemContainerAttrs();
 
+        if (!$link || empty($item->link) || empty($item->name) ) {
+                return $html;
+        }       
+
         if ($last) {
             $attrs .= ' class="active"';
         }
