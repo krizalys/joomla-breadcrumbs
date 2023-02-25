@@ -1,6 +1,13 @@
 Change log
 ==========
 
+[Unreleased][unreleased]
+------------------------
+
+### Fixed
+
+- [#7: [Microdata] The value provided for id must be a valid URL][github-issue-7].
+
 [1.2.1] - 2019-10-09
 --------------------
 
